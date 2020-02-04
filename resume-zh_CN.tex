@@ -31,17 +31,21 @@
 \section{\faFlask\ 研究经历}
 \subsection{\textbf{动力系统 - 发展方程解的长时间动力学行为}}
 \begin{onehalfspacing}
-本人硕士期间主要研究方向是无穷维动力系统及其吸引子，
-旨在通过研究发展方程吸引子的性质，如存在性、正则性以及吸引子的维数等刻画解的长时间行为。
-主要工具是PDE先验估计、非线性泛函分析与测度论。
-本人在硕士期间主要工作是对一类加权$p$-Laplace抛物方程吸引子的存在性与正则性估计。
+\begin{itemize}
+  \item 对一类退化的 $p$-Laplace 方程给出了吸引子的存在性，以便于进一步刻画解的长时间行为
+  \item 得到了全局吸引子的正则性估计，以便于对吸引子的性质如维数等进行进一步的研究
+  \item 主要框架是测度论、非线性泛函分析以及PDE先验估计等
+\end{itemize}
 \end{onehalfspacing}
 
-\subsection{\textbf{机器学习 - 神经ODE}}
-鄂维南院士之前提出可以将神经网络看成连续动力系统，其中层看作时间点。
-这样我们很多神经网络解释为离散的微分方程以及可以用处理随机微分方程的方法来优化网络结构。
-这方面的理论化正由鄂维南教授团队在做，同时在计算机学界也有了很多应用、产生了有用的算法。
-我曾尝试进一步将其应用在具体的网络上，如RNN，但效果并未有显著提高
+\subsection{\textbf{机器学习 - 从动力系统的角度看待机器学习}}
+\begin{onehalfspacing}
+  \begin{itemize}
+    \item 通过将隐层下标对应到时间把神经网络解释为离散的动力系统
+    \item 从这个视角，可以通过PDE/ODE模型设计神经网络
+    \item 同时可以将优化问题转化为神经网络的无监督模型
+  \end{itemize}
+\end{onehalfspacing}
 
 \section{\faUsers\ 实习/项目经历}
 \datedsubsection{\textbf{重离子加速器软件开发}}{2019年12月 -- 至今}
@@ -49,10 +53,11 @@
 \begin{onehalfspacing}
 用PyQt5开发重离子加速器软件界面以及后台逻辑
 \begin{itemize}
-  \item 负责整体架构，分配工作以及写项目文档
-  \item 负责绘制大部分界面
-  \item 自动生成大部分后台逻辑代码
-  \item 负责所有的数据绘图，按需添加数据缓存
+  \item 负责分配工作以及写项目文档
+  \item 用QWidget编写大部分界面，后期在考虑用QML重构
+  \item 通过正则匹配相关变量存为json文件，再进一步自动生成部分逻辑代码
+  \item 用PyQtGraph处理所有的数据绘图，按需添加数据缓存，数据的采样以及更新方式。
+  \item 负责整体架构，将代码分成界面类、自动生成功能类和手动编写的功能类
 \end{itemize}
 \end{onehalfspacing}
 
@@ -66,10 +71,9 @@
 \section{\faCogs\ 相关技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C, C++, Python, Matlab
-  \item AI框架: Pytorch, Tensorflow
+  \item 编程语言: C++, Python, Matlab
+  \item 框架: Qt5, Pytorch, Tensorflow
   \item 平台: Linux, macOS
-  \item 开发: Qt5
   \item 英语: CET6
 \end{itemize}
 
