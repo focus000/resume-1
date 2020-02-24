@@ -9,6 +9,7 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{multicol}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -17,16 +18,18 @@
 
 \basicInfo{
   \email{liyunfang@outlook.com} \textperiodcentered\ 
-  \phone{(+86) 137-0877-2794} \textperiodcentered\ 
+  \phone{(+86) 130-0877-2794} \textperiodcentered\ 
   \github[@focus000]{https://github.com/focus000} \textperiodcentered\ 
-  \linkedin[Yunfang-Li]{https://www.linkedin.com/in/yunfang-li-3ba402ba/}}
+  % \linkedin[Yunfang-Li]{https://www.linkedin.com/in/yunfang-li-3ba402ba/}
+  }
  
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{兰州大学}, 兰州, 甘肃}{2017 -- 至今}
 \textit{在读硕士研究生（导师：马闪）}\ 应用数学, GPA: 3.32/4\\
 兰州大学学业奖学金（3次）, 预计 2020 年 7 月毕业
 \datedsubsection{\textbf{淮北师范大学}, 淮北, 安徽}{2013 -- 2017}
-\textit{学士}\ 应用数学, GPA: 3.1/4
+\textit{学士}\ 应用数学, GPA: 3.1/4\\
+全国大学生数学建模竞赛三等奖
 
 \section{\faFlask\ 研究经历}
 \subsection{\textbf{动力系统 - 发展方程解的长时间动力学行为}}
@@ -42,8 +45,8 @@
 \begin{onehalfspacing}
   \begin{itemize}
     \item 通过将隐层下标对应到时间把神经网络解释为离散的动力系统
-    \item 从这个视角，可以通过PDE/ODE模型设计神经网络
-    \item 同时可以将优化问题转化为神经网络的无监督模型
+    \item 通过PDE/ODE模型设计相应的网络
+    \item 将优化问题转化为神经网络的无监督模型
   \end{itemize}
 \end{onehalfspacing}
 
@@ -53,11 +56,10 @@
 \begin{onehalfspacing}
 用PyQt5开发重离子加速器软件界面以及后台逻辑
 \begin{itemize}
-  \item 负责分配工作以及写项目文档
-  \item 用QWidget编写大部分界面，后期在考虑用QML重构
-  \item 通过正则匹配相关变量存为json文件，再进一步自动生成部分逻辑代码
-  \item 用PyQtGraph处理所有的数据绘图，按需添加数据缓存，数据的采样以及更新方式。
-  \item 负责整体架构，将代码分成界面类、自动生成功能类和手动编写的功能类
+  \item 负责分配工作以及撰写项目文档
+  \item 负责界面的ui部分以及逻辑部分编写，用PyQtGraph处理所有的数据绘图
+  \item 通过正则匹配自动构建数据结构，再进一步自动生成部分逻辑代码
+  \item 负责软件测试
 \end{itemize}
 \end{onehalfspacing}
 
@@ -70,19 +72,26 @@
 
 \section{\faCogs\ 相关技能}
 % increase linespacing [parsep=0.5ex]
+\vspace{-1\baselineskip}
+\begin{multicols}{2}
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C++, Python, Matlab
-  \item 框架: Qt5, Pytorch, Tensorflow
-  \item 平台: Linux, macOS
-  \item 英语: CET6
+    \item 编程语言: C++, Python, Matlab
+    \item 框架: Qt5, Pytorch, Tensorflow
+    \item 平台: Linux, macOS
+    \item 英语: CET6
 \end{itemize}
+\end{multicols}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \datedsubsection{无穷维动力系统及其吸引子国际会议}{2019.7}
-\datedsubsection{兰州大学,\textit{暑期学校}}{2019.6}
+% \datedsubsection{兰州大学,\textit{暑期学校}}{2019.6}
 \datedsubsection{厦门大学,\textit{暑期学校}}{2018.8}
 \datedsubsection{非线性分析国际会议暨第二十届全国非线性泛函分析会议}{2018.5}
+
+\section{\faGamepad\ 关于我}
+我是数学出身，相对严谨细致有点追求完美，但同时追求高风险高收益。我在学习科研中兴趣广泛，从基础数学到机器学习都有所涉猎。
+内心认同并向往充满好奇心和探索欲的极客精神，正在寻找软件工程师岗位，愿与这群人一起工作成长
 
 %% Reference
 %\newpage
